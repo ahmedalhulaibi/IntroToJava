@@ -136,13 +136,13 @@ extends java.lang.Object</pre>
 <td class="colOne"><code><span class="memberNameLink"><a href="../CardsAssignmentOne/Card.html#Card--">Card</a></span>()</code>
 <div class="block">Default card constructor override
  Randomly assigns suit
- Randomly assigns number
- numberName is set based on number minus 1 to account for zero-based index</div>
+ Randomly assigns cardValue
+ numberName is set based on cardValue minus 1 to account for zero-based index</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../CardsAssignmentOne/Card.html#Card-java.lang.String-int-">Card</a></span>(java.lang.String&nbsp;suit,
-    int&nbsp;number)</code>&nbsp;</td>
+    int&nbsp;cardValue)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -162,14 +162,14 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../CardsAssignmentOne/Card.html#getNumber--">getNumber</a></span>()</code>
-<div class="block">Get the integer value of the face value (card number)
+<div class="block">Get the integer value of the face value (card cardValue)
  Output will be an integer value from 1 to 13</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../CardsAssignmentOne/Card.html#getNumberName--">getNumberName</a></span>()</code>
-<div class="block">Get name of face value (card number)
+<div class="block">Get name of face value (card cardValue)
  Output is a string value:
  1 - "Ace",
  2 - "2",
@@ -194,9 +194,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../CardsAssignmentOne/Card.html#setNumber-int-">setNumber</a></span>(int&nbsp;number)</code>
-<div class="block">Set the integer value of the face value (card number)
- Automatically assigns numberName based on number</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../CardsAssignmentOne/Card.html#setNumber-int-">setNumber</a></span>(int&nbsp;cardValue)</code>
+<div class="block">Set the integer value of the face value (card cardValue)
+ Automatically assigns numberName based on cardValue</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -243,8 +243,8 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;Card()</pre>
 <div class="block">Default card constructor override
  Randomly assigns suit
- Randomly assigns number
- numberName is set based on number minus 1 to account for zero-based index</div>
+ Randomly assigns cardValue
+ numberName is set based on cardValue minus 1 to account for zero-based index</div>
 </li>
 </ul>
 <a name="Card-java.lang.String-int-">
@@ -254,11 +254,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>Card</h4>
 <pre>public&nbsp;Card(java.lang.String&nbsp;suit,
-            int&nbsp;number)</pre>
+            int&nbsp;cardValue)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>suit</code> - </dd>
-<dd><code>number</code> - </dd>
+<dd><code>cardValue</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -306,7 +306,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getNumberName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getNumberName()</pre>
-<div class="block">Get name of face value (card number)
+<div class="block">Get name of face value (card cardValue)
  Output is a string value:
  1 - "Ace",
  2 - "2",
@@ -334,11 +334,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getNumber</h4>
 <pre>public&nbsp;int&nbsp;getNumber()</pre>
-<div class="block">Get the integer value of the face value (card number)
+<div class="block">Get the integer value of the face value (card cardValue)
  Output will be an integer value from 1 to 13</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>number</dd>
+<dd>cardValue</dd>
 </dl>
 </li>
 </ul>
@@ -348,12 +348,12 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setNumber</h4>
-<pre>public&nbsp;void&nbsp;setNumber(int&nbsp;number)</pre>
-<div class="block">Set the integer value of the face value (card number)
- Automatically assigns numberName based on number</div>
+<pre>public&nbsp;void&nbsp;setNumber(int&nbsp;cardValue)</pre>
+<div class="block">Set the integer value of the face value (card cardValue)
+ Automatically assigns numberName based on cardValue</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>number</code> - must be value from 1 to 13</dd>
+<dd><code>cardValue</code> - must be value from 1 to 13</dd>
 </dl>
 </li>
 </ul>

@@ -19,7 +19,7 @@ public class Card {
     private static String suits[] = new String[]{"Spades","Hearts","Diamonds","Clubs"};
 
     //static String array of printable face value of card
-    private static String numberNames[] = new String[]{"Ace",
+    private static String cardValueNames[] = new String[]{"Ace",
                                                     "2",
                                                     "3",
                                                     "4",
@@ -36,31 +36,31 @@ public class Card {
     private String suit;
 
     //object instance face value string name
-    private String numberName;
+    private String cardValueName;
 
     //object instance face value
-    private int number;
+    private int cardValue;
 
     /***
      * Default card constructor override
      * Randomly assigns suit
-     * Randomly assigns number
-     * numberName is set based on number minus 1 to account for zero-based index
+     * Randomly assigns cardValue
+     * cardValueName is set based on cardValue minus 1 to account for zero-based index
      * */
     public Card() {
         suit = suits[Utility.randomInRange(0,suits.length - 1)];
-        number = Utility.randomInRange(13,1);
-        numberName = numberNames[number - 1];
+        cardValue = Utility.randomInRange(13,1);
+        cardValueName = cardValueNames[cardValue - 1];
     }
 
     /***
-     * Constructor overload to set suit and face value (card number)
+     * Constructor overload to set suit and face value (card cardValue)
      * @param suit default to "Spades" if not one of "Spades","Hearts","Diamonds","Clubs"
-     * @param number must be value from 1 to 13, else default to 1
+     * @param cardValue must be value from 1 to 13, else default to 1
      */
-    public Card(String suit, int number) {
+    public Card(String suit, int cardValue) {
         setSuit(suit);
-        setNumber(number);
+        setCardValue(cardValue);
     }
 
     /***
@@ -86,7 +86,7 @@ public class Card {
     }
 
     /***
-     * Get name of face value (card number)
+     * Get name of face value (card cardValue)
      * Output is a string value:
      * 1 - "Ace",
      * 2 - "2",
@@ -101,40 +101,40 @@ public class Card {
      * 11 - "Jack",
      * 12 - "Queen",
      * 13 - "King"
-     * @return numberName
+     * @return cardValueName
      */
-    public String getNumberName() {
-        return numberName;
+    public String getCardValueName() {
+        return cardValueName;
     }
 
     /***
-     * Get the integer value of the face value (card number)
+     * Get the integer value of the face value (card cardValue)
      * Output will be an integer value from 1 to 13
-     * @return number
+     * @return cardValue
      */
-    public int getNumber() {
-        return number;
+    public int getCardValue() {
+        return cardValue;
     }
 
     /***
-     * Set the integer value of the face value (card number)
-     * Automatically assigns numberName based on number
-     * @param number must be value from 1 to 13, else default to 1
+     * Set the integer value of the face value (card cardValue)
+     * Automatically assigns cardValueName based on cardValue
+     * @param cardValue must be value from 1 to 13, else default to 1
      */
-    public void setNumber(int number) {
-        //if @param number is less than 1 or greater than 13 set to 1
-        //else set this.number = number
-        this.number = number < 1 || number > 13 ? 1 : number;
-        this.numberName = this.numberNames[this.number - 1];
+    public void setCardValue(int cardValue) {
+        //if @param cardValue is less than 1 or greater than 13 set to 1
+        //else set this.cardValue = cardValue
+        this.cardValue = cardValue < 1 || cardValue > 13 ? 1 : cardValue;
+        this.cardValueName = this.cardValueNames[this.cardValue - 1];
     }
 
 
 
     /***
-     * Returns card object numberName and suit fields as a String
-     * @return String this.numberName + " Of " + this.suit
+     * Returns card object cardValueName and suit fields as a String
+     * @return String this.cardValueName + " Of " + this.suit
      */
     public String toString(){
-        return this.numberName + " Of " + this.suit;
+        return this.cardValueName + " Of " + this.suit;
     }
 }
