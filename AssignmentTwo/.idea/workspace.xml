@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a3a8480-6ccd-4bbb-b279-15bf9c968b1f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CardsAssignmentTwo/GameLoop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CardsAssignmentTwo/War2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AssignmentOne/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/CardsAssignmentOne/Card.html" afterPath="$PROJECT_DIR$/../AssignmentOne/CardsAssignmentOne/Card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/CardsAssignmentOne/Utility.html" afterPath="$PROJECT_DIR$/../AssignmentOne/CardsAssignmentOne/Utility.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/Card.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/Card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/PickTwoCards.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/PickTwoCards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/Utility.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/Utility.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/class-use/Card.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/class-use/Card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/class-use/PickTwoCards.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/class-use/PickTwoCards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/class-use/Utility.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/class-use/Utility.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-frame.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-summary.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-tree.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-use.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/CardsAssignmentOne/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/allclasses-frame.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/allclasses-noframe.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/constant-values.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/deprecated-list.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/deprecated-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/help-doc.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/help-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-1.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-2.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-3.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-4.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-5.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-6.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-7.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-8.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index-files/index-8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/overview-tree.html" afterPath="$PROJECT_DIR$/../AssignmentOne/JavaDoc/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/index-files/index-1.html" afterPath="$PROJECT_DIR$/../AssignmentOne/index-files/index-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/index-files/index-2.html" afterPath="$PROJECT_DIR$/../AssignmentOne/index-files/index-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/index-files/index-6.html" afterPath="$PROJECT_DIR$/../AssignmentOne/index-files/index-6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AssignmentOne/src/CardsAssignmentOne/Card.java" afterPath="$PROJECT_DIR$/../AssignmentOne/src/CardsAssignmentOne/Card.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="War.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="War.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="272">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -62,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/GameLoop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -81,27 +49,18 @@
       <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1632">
+            <state relative-caret-position="357">
               <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding>
-                <element signature="e#3797#3798#0" expanded="true" />
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#4062#4063#0" expanded="true" />
-                <element signature="e#4117#4118#0" expanded="true" />
-                <element signature="e#4324#4325#0" expanded="true" />
-                <element signature="e#4381#4382#0" expanded="true" />
-                <element signature="e#4647#4648#0" expanded="true" />
-                <element signature="e#4730#4731#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+            <state relative-caret-position="408">
+              <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -180,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,6 +185,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -255,7 +214,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -688,7 +647,9 @@
       <workItem from="1495334016921" duration="1504000" />
       <workItem from="1495419598636" duration="6043000" />
       <workItem from="1495428942792" duration="842000" />
-      <workItem from="1495464099495" duration="7715000" />
+      <workItem from="1495464099495" duration="8268000" />
+      <workItem from="1496591143967" duration="12000" />
+      <workItem from="1496591223714" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment two">
       <created>1495465899021</created>
@@ -701,7 +662,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28395000" />
+    <option name="totallyTimeSpent" value="29009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
@@ -710,32 +671,32 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30020285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19624217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4401228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4401228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -769,6 +730,86 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="89" lean-forward="false" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="89" lean-forward="false" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -779,16 +820,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
-          <folding>
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4730#4731#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -812,16 +844,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
-          <folding>
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4730#4731#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -837,16 +860,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4730#4731#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,16 +876,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4730#4731#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -887,16 +892,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4730#4731#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,18 +925,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War.java">
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="408">
+          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/GameLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -953,27 +949,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Card.java">
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4730#4731#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/Utility.java">
+    <entry file="file://$PROJECT_DIR$/src/CardsAssignmentTwo/War.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
