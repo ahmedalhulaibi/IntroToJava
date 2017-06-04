@@ -17,7 +17,7 @@ public class Utility {
     /**Returns an unsigned integer between min and max inclusive
      * @param min minimum value
      * @param max maximum value
-     * @return A number in between min and max inclusive*/
+     * @return int between min and max inclusive*/
     public static int randomInRange(int min, int max) {
         int range = Math.abs(max - min) + 1;
         return (int) (Math.random() * range) + (min < max ? min : max);

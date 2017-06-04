@@ -65,7 +65,7 @@ public class Card {
 
     /***
      * returns value of suit
-     * @return suit : "Spades","Hearts","Diamonds","Clubs"
+     * @return String suit : "Spades","Hearts","Diamonds","Clubs"
      */
     public String getSuit() {
         return suit;
@@ -101,7 +101,7 @@ public class Card {
      * 11 - "Jack",
      * 12 - "Queen",
      * 13 - "King"
-     * @return cardValueName
+     * @return String cardValueName
      */
     public String getCardValueName() {
         return cardValueName;
@@ -110,7 +110,7 @@ public class Card {
     /***
      * Get the integer value of the face value (card cardValue)
      * Output will be an integer value from 1 to 13
-     * @return cardValue
+     * @return int cardValue
      */
     public int getCardValue() {
         return cardValue;
@@ -131,7 +131,7 @@ public class Card {
     /***
      * Card value comparison function
      * @param other Card object to compare to
-     * @return this.cardValue < other.cardValue
+     * @return boolean this.cardValue < other.cardValue
      */
     public boolean isCardValueLessThan(Card other)
     {
@@ -141,7 +141,7 @@ public class Card {
     /***
      * Card value comparison function
      * @param other Card object to compare to
-     * @return this.cardValue > other.cardValue
+     * @return boolean this.cardValue > other.cardValue
      */
     public boolean isCardValueGreaterThan(Card other)
     {
@@ -151,7 +151,7 @@ public class Card {
     /***
      * Card value comparison function
      * @param other Card object to compare to
-     * @return this.cardValue == other.cardValue
+     * @return boolean this.cardValue == other.cardValue
      */
     public boolean isCardValueEqualTo(Card other)
     {
@@ -161,7 +161,7 @@ public class Card {
     /***
      * Copmares cardValue and suit to determine if it is a duplicate card
      * @param other Card object to compare to
-     * @return this.cardValue == other.cardValue && this.suit == other.suit
+     * @return boolean this.cardValue == other.cardValue && this.suit == other.suit
      */
     public  boolean isCardEqualTo(Card other)
     {
