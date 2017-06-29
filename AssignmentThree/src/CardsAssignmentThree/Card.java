@@ -64,6 +64,24 @@ public class Card {
     }
 
     /***
+     * Constructor overload to set suit and face value (card cardValue)
+     * @param suit integer default to 0 if not between 0-3 inclusive 0,1,2,3 = "Spades","Hearts","Diamonds","Clubs"
+     * @param cardValue must be value from 1 to 13, else default to 1
+     */
+    public Card(int suit, int cardValue) {
+        setSuit(suit);
+        setCardValue(cardValue);
+    }
+
+    /***
+     * Copy constructor
+     */
+    public Card(Card other)
+    {
+        setSuit(other.getSuit());
+        setCardValue(other.getCardValue());
+    }
+    /***
      * returns value of suit
      * @return String suit : "Spades","Hearts","Diamonds","Clubs"
      */
@@ -83,6 +101,23 @@ public class Card {
         {
             this.suit = "Spades";
         }
+    }
+
+    /***
+     * Sets suit based on integer passed. Must be value 0-3 inclusive else defaults to 0.
+     * 0 - Spades
+     * 1 - Hearts
+     * 2 - Diamonds
+     * 3 - Clubs
+     * @param suit
+     */
+    public void setSuit(int suit)
+    {
+        if(suit < 0 || suit > 3)
+        {
+            suit = 0;
+        }
+        this.suit = suits[suit];
     }
 
     /***

@@ -10,10 +10,18 @@ package CardsAssignmentThree;
 public class GameLoop {
     public static void main(String[] args)
     {
+        FullDeck deck = new FullDeck();
         War war = new War();
-        war.SingleDraw(false);
         War2 war2 = new War2();
-        war2.WarCall(war);
+        //loop game while there are at least 2 or more cards in play
+        while (deck.getDeckLength() >= 2)
+        {
+            war.SingleDraw(false,deck);
+            war2.WarCall(war,deck);
+        }
+        String format = "%-25s%-25s%-25s\n";
+        System.out.printf(format, "Computer Wins", "Human Player Wins", "Ties Count");
+        System.out.printf(format, war.ComputerScore, war.PlayerScore, war.Ties);
 
         System.exit(0);
     }

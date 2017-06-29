@@ -13,22 +13,18 @@ public class War {
     public boolean Tie = false;
     public Card playerCard;
     public Card computerCard;
+    public int PlayerScore = 0;
+    public int ComputerScore = 0;
+    public int Ties = 0;
     /***
      * This program will draw two cards for a player and computer and determine the result
      * @param war Set to true if calling for a special war else set to false
      */
-    public void SingleDraw(boolean war)
+    public void SingleDraw(boolean war, FullDeck deck)
     {
         //default constructor randomly assigns suit and cardValue
-        playerCard = new Card();
-        computerCard = new Card();
-
-        //while the suit and card value are the same
-        //change suit of playerCard
-        while (playerCard.isCardEqualTo(computerCard))
-        {
-            playerCard.setSuit(Card.suits[Utility.randomInRange(0,3)]);
-        }
+        playerCard = deck.drawCard();
+        computerCard = deck.drawCard();
 
         //set boolean results each call
         PlayerWin = computerCard.isCardValueLessThan(playerCard);
@@ -51,12 +47,15 @@ public class War {
         }else if(Tie)
         {
             result = "Tie";
+            Ties++;
         }else if(PlayerWin)
         {
             result = "Player wins";
+            PlayerScore++;
         }else if(ComputerWin)
         {
             result = "Computer wins";
+            ComputerScore++;
         }
 
 
