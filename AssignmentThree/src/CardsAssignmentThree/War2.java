@@ -4,7 +4,7 @@ package CardsAssignmentThree;
  * This program checks if the result of a War.SingleDraw was a tie, and proceeds with a special War round
  * @author Ahmed Al-Hulaibi
  * @version 1.0
- * @since 2017-05-21
+ * @since 2017-05-29
  */
 public class War2 {
      public void WarCall(War war, FullDeck deck)

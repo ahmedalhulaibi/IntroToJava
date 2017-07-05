@@ -5,7 +5,7 @@ package CardsAssignmentThree;
  * This program will draw two cards for a player and computer and determine the result
  * @author Ahmed Al-Hulaibi
  * @version 1.0
- * @since 2017-05-21
+ * @since 2017-05-29
  */
 public class War {
     public boolean PlayerWin = false;

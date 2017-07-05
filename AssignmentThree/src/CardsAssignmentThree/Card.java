@@ -7,7 +7,7 @@ import java.util.Arrays;
  * This class contains the definition of a card object
  * @author Ahmed Al-Hulaibi
  * @version 1.0
- * @since 2017-05-21
+ * @since 2017-05-29
  */
 public class Card {
 

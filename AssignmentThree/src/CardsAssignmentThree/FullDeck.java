@@ -2,7 +2,11 @@ package CardsAssignmentThree;
 
 
 /**
- * Created by squig on 2017-06-29.
+ * Created by Ahmed Al-Hulaibi on 6/29/2017.
+ * This class contains the definition of a Playing Card deck
+ * @author Ahmed Al-Hulaibi
+ * @version 1.0
+ * @since 2017-06-29
  */
 public class FullDeck {
     private Card deck[] = new Card[52];
