@@ -14,6 +14,16 @@ public class Utility {
     private Utility() {
     }
 
+    public static String alphabet = "ABCDEFHIJKLMNOPQRSTUVWXYZ";
+
+    /***
+     *
+     */
+    public static int clamp(int value, int min, int max)
+    {
+        return Math.max(min, Math.min(max, value));
+    }
+
     /**Returns an unsigned integer between min and max inclusive
      * @param min minimum value
      * @param max maximum value

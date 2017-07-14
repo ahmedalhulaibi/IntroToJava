@@ -7,8 +7,7 @@ import java.util.ArrayList;
  */
 public class Board {
     private int size;
-    private int boardArray[];
-
+    private int boardArray[][];
 
     private ArrayList<Ship> ships = new ArrayList<>();
 
@@ -19,15 +18,18 @@ public class Board {
             size = 5;
         }
         this.size = size;
-        this.boardArray = new int[this.size * this.size];
-        for(int i = 0; i < this.boardArray.length; i++)
+        this.boardArray = new int[this.size][this.size];
+        for(int i = 0; i < this.size; i++)
         {
-            this.boardArray[i] = 0;
+            for(int j = 0; j < this.size; j++)
+            {
+                this.boardArray[i][j] = 0;
+            }
         }
 
         int shipSizeMax = (size - 1);
         int shipLengthLeft = shipSizeMax * shipSizeMax;
-        while(shipLengthLeft > 0)
+        while(shipLengthLeft > 1)
         {
             int newShipLength = Utility.randomInRange(2, Math.min(shipSizeMax,shipLengthLeft));
             ships.add(new Ship(newShipLength));
@@ -35,74 +37,98 @@ public class Board {
         }
     }
 
+    public boolean placeShip(char y, int x, char orientation, Ship aShip)
+    {
+        int yInt = Utility.alphabet.indexOf(y);
+        return placeShip(Utility.clamp(x - 1,0,this.size - 1), yInt, orientation, aShip);
+    }
+
     public boolean placeShip(int x, int y, char orientation, Ship aShip)
     {
         //if not yet used
+        boolean setShipOnBoard = true;
         if(aShip.getOrientation() == 'N')
         {
-            int shipHeadPos = x * this.size + y;
+            int shipHeadPos = y * this.size + x;
             int shipTailPos;
-            boolean setShipOnBoard;
             switch(orientation)
             {
                 case 'h':
-                    shipTailPos = (x + (aShip.getLength() - 1)) * this.size + y;
-                    int xCopy;
-                    setShipOnBoard = true;
-                    for(xCopy = x; (xCopy * this.size + y) <= shipTailPos; xCopy++)
+                    if(x + (aShip.getLength() - 1) < this.size)
                     {
-                        if(boardArray[xCopy * this.size + y] != 0)
+                        for(int xCopy = x; xCopy < this.size && xCopy <= x + (aShip.getLength() - 1); xCopy++)
                         {
-                             setShipOnBoard = false;
-                             break;
+                            this.boardArray[y][xCopy] = 1;
                         }
-                    }
-                    if(setShipOnBoard)
+                    }else
                     {
-                        for(xCopy = x; (xCopy * this.size + y) <= shipTailPos; xCopy++)
-                        {
-                            boardArray[xCopy * this.size + y] = 1;
-                        }
+                        setShipOnBoard = false;
                     }
-                    aShip.setOrientation(orientation);
                     break;
                 case 'v':
-                    shipTailPos = x * this.size + (y + aShip.getLength() - 1);
-                    int yCopy;
-                    setShipOnBoard = true;
-                    for(yCopy = y; (x * this.size + (y + yCopy)) <= shipTailPos; yCopy++)
+                    if(y + (aShip.getLength() - 1) < this.size)
                     {
-                        if(boardArray[x * this.size + (y + yCopy)] != 0)
+                        for(int yCopy = y; yCopy < this.size && yCopy <= y + (aShip.getLength() - 1); yCopy++)
                         {
-                            setShipOnBoard = false;
-                            break;
+                            this.boardArray[yCopy][x] = 1;
                         }
-                    }
-                    if(setShipOnBoard)
+                    }else
                     {
-                        for(yCopy = y; (x * this.size + (y + yCopy)) <= shipTailPos; yCopy++)
-                        {
-                            boardArray[x * this.size + (y + yCopy)] = 1;
-                        }
+                        setShipOnBoard = false;
                     }
-                    aShip.setOrientation(orientation);
                     break;
                 default:
-                    return false;
+                    setShipOnBoard = false;
             }
-        }else
-        {
-            return false;
         }
-        return true;
+        if (setShipOnBoard)
+        {
+            aShip.setOrientation(orientation);
+        }
+        return setShipOnBoard;
     }
 
-    public ArrayList<Ship> getShips() {
+    public ArrayList<Ship> getShips()
+    {
         return ships;
     }
 
     public String toString()
     {
+        String output = "  ";
 
+        //build header for board
+        for(int i = 1; i <= this.size; i++)
+        {
+            output = output + Integer.toString(i) + " ";
+        }
+
+        for(int i = 0; i < this.size; i++)
+        {
+            output = output + "\n" + Utility.alphabet.charAt(i) + " ";
+            for(int j = 0; j < this.size; j++)
+            {
+                char boardRepresentation = ' ';
+                switch (this.boardArray[i][j])
+                {
+                    case 0:
+                        //empty spot
+                        boardRepresentation = '-';
+                        break;
+                    case 1:
+                        //ship placed
+                        boardRepresentation = '#';
+                        break;
+                    case 2:
+                        //ship hit
+                        boardRepresentation = 'X';
+                        break;
+                }
+                output = output + Character.toString(boardRepresentation) + " ";
+            }
+        }
+        output = output + "\n";
+
+        return output;
     }
 }
