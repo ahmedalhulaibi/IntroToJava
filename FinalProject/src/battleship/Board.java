@@ -1,6 +1,7 @@
 package battleship;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Ahmed Al-Hulaibi on 7/12/2017.
@@ -88,9 +89,50 @@ public class Board {
         return setShipOnBoard;
     }
 
+    public boolean hitShip(char y, int x)
+    {
+        int yPos = Utility.alphabet.indexOf(y);
+        int xPos = Utility.clamp(x - 1,0,this.size - 1);
+        switch(boardArray[yPos][xPos])
+        {
+            case 0:
+                System.out.println("Miss!");
+                break;
+            case 1:
+                boardArray[yPos][xPos] = 2;
+                System.out.println("Direct hit!");
+                return true;
+            case 2:
+                System.out.println("Already hit.");
+                break;
+        }
+        return false;
+
+    }
+
+    //if all ships on board have been hit
+    public boolean isBoardClear()
+    {
+        if(Arrays.asList(boardArray).contains(1))
+        {
+            return false;
+        }
+        return true;
+    }
+
     public ArrayList<Ship> getShips()
     {
         return ships;
+    }
+
+    public void setBoardArrayValue(int y, int x, int val)
+    {
+        this.boardArray[y][x] = val;
+    }
+
+    public int getSize()
+    {
+        return size;
     }
 
     public String toString()

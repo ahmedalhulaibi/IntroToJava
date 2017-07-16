@@ -26,6 +26,18 @@ public class BattleShipGame {
         System.out.print(HumanBoard);
         HumanBoard.placeShip('C',2,'v',HumanBoard.getShips().get(2));
         System.out.print(HumanBoard);
+        HumanBoard.hitShip('A',1);
+        System.out.print(HumanBoard);
 
+        while(!HumanBoard.isBoardClear() && !ComputerBoard.isBoardClear())
+        {
+            System.out.println("Human Turn");
+            //take human input
+            //attempt to hit computer board
+            ComputerBoard.hitShip();
+
+            System.out.println("Copmuter Turn");
+            HumanBoard.hitShip();
+        }
     }
 }
