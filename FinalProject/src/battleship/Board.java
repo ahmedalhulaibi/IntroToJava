@@ -8,12 +8,16 @@ import java.util.Arrays;
  */
 public class Board {
     private int size;
+
+
     private int boardArray[][];
 
     private ArrayList<Ship> ships = new ArrayList<>();
 
-    public Board(int size)
+    private String boardName = "";
+    public Board(int size, String boardName)
     {
+        this.boardName = boardName;
         if(size < 5)
         {
             size = 5;
@@ -28,7 +32,7 @@ public class Board {
             }
         }
 
-        int shipSizeMax = (size - 1);
+        int shipSizeMax = (size - 2);
         int shipLengthLeft = shipSizeMax * shipSizeMax;
         while(shipLengthLeft > 1)
         {
@@ -55,7 +59,19 @@ public class Board {
             switch(orientation)
             {
                 case 'h':
+                    //check if pos is used
                     if(x + (aShip.getLength() - 1) < this.size)
+                    {
+                        for(int xCopy = x; xCopy < this.size && xCopy <= x + (aShip.getLength() - 1); xCopy++)
+                        {
+                            if(this.boardArray[y][xCopy] != 0)
+                            {
+                                setShipOnBoard = false;
+                                break;
+                            }
+                        }
+                    }
+                    if(x + (aShip.getLength() - 1) < this.size && setShipOnBoard)
                     {
                         for(int xCopy = x; xCopy < this.size && xCopy <= x + (aShip.getLength() - 1); xCopy++)
                         {
@@ -67,7 +83,19 @@ public class Board {
                     }
                     break;
                 case 'v':
+                    //check if pos is used
                     if(y + (aShip.getLength() - 1) < this.size)
+                    {
+                        for(int yCopy = y; yCopy < this.size && yCopy <= y + (aShip.getLength() - 1); yCopy++)
+                        {
+                            if(this.boardArray[yCopy][x] != 0)
+                            {
+                                setShipOnBoard = false;
+                                break;
+                            }
+                        }
+                    }
+                    if(y + (aShip.getLength() - 1) < this.size && setShipOnBoard)
                     {
                         for(int yCopy = y; yCopy < this.size && yCopy <= y + (aShip.getLength() - 1); yCopy++)
                         {
@@ -82,6 +110,10 @@ public class Board {
                     setShipOnBoard = false;
             }
         }
+        else
+        {
+            setShipOnBoard = false;
+        }
         if (setShipOnBoard)
         {
             aShip.setOrientation(orientation);
@@ -89,7 +121,7 @@ public class Board {
         return setShipOnBoard;
     }
 
-    public boolean hitShip(char y, int x)
+    public int hitShip(char y, int x)
     {
         int yPos = Utility.alphabet.indexOf(y);
         int xPos = Utility.clamp(x - 1,0,this.size - 1);
@@ -101,21 +133,27 @@ public class Board {
             case 1:
                 boardArray[yPos][xPos] = 2;
                 System.out.println("Direct hit!");
-                return true;
+                break;
             case 2:
                 System.out.println("Already hit.");
                 break;
         }
-        return false;
+        return boardArray[yPos][xPos];
 
     }
 
     //if all ships on board have been hit
     public boolean isBoardClear()
     {
-        if(Arrays.asList(boardArray).contains(1))
+        for(int i = 0; i < this.size; i++)
         {
-            return false;
+            for(int j = 0; j < this.size; j++)
+            {
+                if(this.boardArray[i][j] == 1)
+                {
+                    return false;
+                }
+            }
         }
         return true;
     }
@@ -135,19 +173,42 @@ public class Board {
         return size;
     }
 
+
+    public int[][] getBoardArray()
+    {
+        return boardArray;
+    }
+
+    public String outputBoardOnlyHits()
+    {
+        String output = this.toString();
+
+        //output = output.replace('#','-');
+        return output.replace('#','-');
+    }
+
     public String toString()
     {
-        String output = "  ";
+        StringBuilder sb = new StringBuilder();
+        sb.append(boardName);
+        sb.append("\n  ");
+        //String output = boardName;
+        //output = output + "\n  ";
 
         //build header for board
         for(int i = 1; i <= this.size; i++)
         {
-            output = output + Integer.toString(i) + " ";
+            sb.append(Integer.toString(i));
+            sb.append(" ");
+            //output = output + Integer.toString(i) + " ";
         }
 
         for(int i = 0; i < this.size; i++)
         {
-            output = output + "\n" + Utility.alphabet.charAt(i) + " ";
+            sb.append("\n");
+            sb.append(Utility.alphabet.charAt(i));
+            sb.append(" ");
+            //output = output + "\n" + Utility.alphabet.charAt(i) + " ";
             for(int j = 0; j < this.size; j++)
             {
                 char boardRepresentation = ' ';
@@ -166,11 +227,15 @@ public class Board {
                         boardRepresentation = 'X';
                         break;
                 }
-                output = output + Character.toString(boardRepresentation) + " ";
+                sb.append(Character.toString(boardRepresentation));
+                sb.append(" ");
+                //output = output + Character.toString(boardRepresentation) + " ";
             }
         }
-        output = output + "\n";
+        sb.append("\n");
+        //output = output + "\n";
 
-        return output;
+        //return output;
+        return sb.toString();
     }
 }
