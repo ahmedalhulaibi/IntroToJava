@@ -6,9 +6,16 @@ package battleship;
 public class Player {
     public BSAI aiModule;
     private Board board;
-    public Player(Board board)
+    private String playerName;
+
+    public Player(Board board, String playerName)
     {
         this.board = board;
         this.aiModule = new BSAI(this.board);
+        this.playerName = playerName;
+    }
+
+    public String getPlayerName() {
+        return playerName;
     }
 }

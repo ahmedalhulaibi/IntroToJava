@@ -22,7 +22,7 @@ public class BSAI {
         this.maxNumberOfShipSpots = this.ComputerBoard.getSize() - 1;
 
 
-
+        //load the opponents board with all '1's, this assumes all positions on the board are valid targets
         for(int i = 0; i < this.OpponentBoardPerceived.getSize(); i++)
         {
             for(int j = 0; j < this.OpponentBoardPerceived.getSize(); j++)
@@ -40,7 +40,8 @@ public class BSAI {
         int randCol = Utility.randomInRange(1,size-1);
         String pos;
         while(this.OpponentBoardPerceived.getBoardArray()[randRow][randCol-1] == 0 ||
-              this.OpponentBoardPerceived.getBoardArray()[randRow][randCol-1] == 2)
+                this.OpponentBoardPerceived.getBoardArray()[randRow][randCol-1] == 2||
+                this.OpponentBoardPerceived.getBoardArray()[randRow][randCol-1] == 3)
         {
             randRow = Utility.randomInRange(0,size-1);
             randCol = Utility.randomInRange(1,size-1);
@@ -106,6 +107,12 @@ public class BSAI {
     {
         this.OpponentBoardPerceived.setBoardArrayValue(pos[0],pos[1],result);
 
+    }
+
+    public boolean hasPositionBeenAttempted(int pos[])
+    {
+        return this.OpponentBoardPerceived.getBoardArray()[pos[0]][pos[1]] == 2 ||
+                this.OpponentBoardPerceived.getBoardArray()[pos[0]][pos[1]] == 3 ;
     }
 
 }

@@ -129,12 +129,14 @@ public class Board {
         {
             case 0:
                 System.out.println("Miss!");
+                boardArray[yPos][xPos] = 3;
                 break;
             case 1:
                 boardArray[yPos][xPos] = 2;
                 System.out.println("Direct hit!");
                 break;
             case 2:
+            case 3:
                 System.out.println("Already hit.");
                 break;
         }
@@ -225,6 +227,10 @@ public class Board {
                     case 2:
                         //ship hit
                         boardRepresentation = 'X';
+                        break;
+                    case 3:
+                        //ship miss
+                        boardRepresentation = '+';
                         break;
                 }
                 sb.append(Character.toString(boardRepresentation));
