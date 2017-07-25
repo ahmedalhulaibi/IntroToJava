@@ -2,10 +2,10 @@ package battleship;
 
 /**
  * Created by Ahmed Al-Hulaibi on 5/21/2017.
- * This class contains reusable utility functions
+ * This class contains reusable utility functions and data
  * @author Ahmed Al-Hulaibi
  * @version 1.0
- * @since 2017-05-21
+ * @since 2017-07-21
  */
 public class Utility {
     /***
@@ -17,7 +17,11 @@ public class Utility {
     public static String alphabet = "ABCDEFHIJKLMNOPQRSTUVWXYZ";
 
     /***
-     *
+     * This function will clamp a number between min and max exclusive
+     * @param value
+     * @param min
+     * @param max
+     * @return clamped integer value
      */
     public static int clamp(int value, int min, int max)
     {

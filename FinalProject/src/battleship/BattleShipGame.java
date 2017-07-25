@@ -3,27 +3,38 @@ package battleship;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
-
+/**
+ * Created by Ahmed Al-Hulaibi on 2017-07-15.
+ * Battleship Game
+ * This module keeps track of the game state and the has the main control loop
+ */
 public class BattleShipGame {
     public static void main(String[] args) {
 	// write your code here
 
+        Scanner input = new Scanner(System.in);
+
+        //init game objects
         Board HumanBoard = new Board(6, "Your Board: ");
         Board ComputerBoard = new Board(6, "Computer Board: ");
         Player HumanPlayer = new Player(HumanBoard, "Human Player");
         Player ComputerPlayer = new Player(ComputerBoard, "Computer Player");
 
-        Scanner input = new Scanner(System.in);
+        //place player ships
+        playerShipPlacement(HumanBoard);
+        //computerShipPlacement(HumanBoard);
 
-        //playerShipPlacement(HumanBoard);
-        computerShipPlacement(HumanBoard);
-
+        //place computer ships
         computerShipPlacement(ComputerBoard);
 
+        //**************************start game*********************************
         System.out.println("Let the games begin!");
 
         gameLoop(HumanPlayer,ComputerPlayer,HumanBoard,ComputerBoard);
+        //***************************end game**********************************
 
+
+        //output winner
         if(HumanBoard.isBoardClear())
         {
             System.out.println("Computer wins!");
@@ -34,10 +45,15 @@ public class BattleShipGame {
             System.out.println("Player wins!");
         }
 
+        //output boards
         System.out.println(HumanBoard);
         System.out.println(ComputerBoard);
     }
 
+    /***
+     * This function takes a Board object as input and takes user input to place Ship objects on a Board
+     * @param HumanBoard
+     */
     public static void playerShipPlacement(Board HumanBoard)
     {
 
@@ -71,6 +87,7 @@ public class BattleShipGame {
                             + " e.g. A2h");
                     String pos = input.nextLine();
 
+                    //use regex to validate input
                     validInput = Pattern.compile("[A-Z][1-9][hv]").matcher(pos).matches();
                     if(validInput)
                     {
@@ -95,6 +112,10 @@ public class BattleShipGame {
         }
     }
 
+    /***
+     * This function takes a Board object as input and will automatically select positions to place Ship objects on a Board
+     * @param ComputerBoard
+     */
     public static void computerShipPlacement(Board ComputerBoard)
     {
         //initial computer ship placement
@@ -155,14 +176,23 @@ public class BattleShipGame {
         }
     }
 
+    /***
+     * This is the game loop. It takes 2 Player objects as input, as well as their corresponding boards
+     * It will simulate a human turn, followed by a computer turn
+     * It tracks the state of the game by check the boards to see if there are any unhit ship positions
+     * @param HumanPlayer
+     * @param ComputerPlayer
+     * @param HumanBoard
+     * @param ComputerBoard
+     */
     public static void gameLoop(Player HumanPlayer, Player ComputerPlayer, Board HumanBoard, Board ComputerBoard)
     {
         Scanner input = new Scanner(System.in);
         while(!HumanBoard.isBoardClear() && !ComputerBoard.isBoardClear())
         {
 
-            //playerTurn(HumanPlayer,ComputerBoard);
-            computerTurn(HumanPlayer,ComputerBoard);
+            playerTurn(HumanPlayer,ComputerBoard);
+            //computerTurn(HumanPlayer,ComputerBoard);
 
             if(!HumanBoard.isBoardClear() && !ComputerBoard.isBoardClear())
             {
@@ -174,6 +204,12 @@ public class BattleShipGame {
         }
     }
 
+    /***
+     * This function allows the user to input a position to attempt a hit on the enemy board
+     * The player also has the option to ask for a hint, which makes use of the AI module the computer uses to make decisions
+     * @param HumanPlayer
+     * @param EnemyBoard
+     */
     public static void playerTurn(Player HumanPlayer,Board EnemyBoard)
     {
 
@@ -216,6 +252,12 @@ public class BattleShipGame {
         }
     }
 
+    /***
+     * This function simulates a computer turn.
+     * The computer AI module will select a position and attempt to hit it on the board
+     * @param ComputerPlayer
+     * @param EnemyBoard
+     */
     public static  void computerTurn(Player ComputerPlayer, Board EnemyBoard)
     {
         char row = ' ';

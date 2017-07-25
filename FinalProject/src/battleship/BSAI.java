@@ -1,24 +1,25 @@
 package battleship;
 
-import java.util.Arrays;
 
 /**
  * Created by Ahmed Al-Hulaibi on 2017-07-15.
  * Battleship AI module
- * This module keeps track of the
+ * This module keeps track of the hits/misses of the player
  */
 public class BSAI {
     Board ComputerBoard;
     Board OpponentBoardPerceived;
-    String rankPos[];
     int maxNumberOfShipSpots;
 
+    /***
+     * BSAI constructor
+     * @param computerBoard
+     */
     public BSAI(Board computerBoard)
     {
         this.ComputerBoard = computerBoard;
         this.OpponentBoardPerceived = new Board(this.ComputerBoard.getSize(),
                                      "NPC Perception of Player Board");
-        int boardArea = this.ComputerBoard.getSize() * this.ComputerBoard.getSize();
         this.maxNumberOfShipSpots = this.ComputerBoard.getSize() - 1;
 
 
@@ -32,9 +33,14 @@ public class BSAI {
         }
     }
 
+    /***
+     * Selects the next target to hit based on previous success/failure
+     * It looks around the board position of successful hits
+     * If no hits have been made, it will make a random decision
+     * @return String in format of battleship pos A1
+     */
     public String selectNextTarget()
     {
-        int n[] = {0,0};
         int size = OpponentBoardPerceived.getSize();
         int randRow = Utility.randomInRange(0,size-1);
         int randCol = Utility.randomInRange(1,size-1);
@@ -103,12 +109,22 @@ public class BSAI {
         return pos;
     }
 
+    /***
+     * Store hitResult
+     * @param pos
+     * @param result
+     */
     public void hitResult(int pos[], int result)
     {
         this.OpponentBoardPerceived.setBoardArrayValue(pos[0],pos[1],result);
 
     }
 
+    /***
+     * Checks if the player has already attempted to hit this position (successful or miss)
+     * @param pos
+     * @return
+     */
     public boolean hasPositionBeenAttempted(int pos[])
     {
         return this.OpponentBoardPerceived.getBoardArray()[pos[0]][pos[1]] == 2 ||
